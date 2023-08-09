@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-size: 20px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+    }
+    .github_head {
+      display: flex;
+      background-color: lightslategrey;
+    }
+    .head-text {
+      text-align: center;
+      margin: auto;
+    }
+    .fa-github {
+      color: white;
+      padding-left: 20px;
+    }
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+    }
+    .side-bar {
+      width: 20%;
+      height: 100vh;
+      background-color: teal;
+    }
+    .boxes {
+      margin: 0px auto;
+      width: 70%;
+      position: relative;
+    }
+    .search {
+      width: 60%;
+      background-color: teal;
+      margin: 5% auto;
+      border-radius: 2%;
+    }
+    .small-box {
+      display: flex;
+      flex-direction: row;
+    }
+    .small {
+      width: 30rem;
+      height: 10em;
+      background-color: teal;
+      margin: 2%;
+    }
+    .large {
+      background-color: teal;
+      width: 51rem;
+      height: 10em;
+      margin: 2%;
+      position: absolute;
+    }
+    h1,
+    p {
+      color: white;
+      text-align: center;
+    }
+    @media only screen and (max-width: 1200px) {
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+      }
+      h1 {
+        font-size: 15px;
+      }
+      .small-box {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .small {
+        width: auto;
+        height: 5em;
+        background-color: teal;
+        margin: 2%;
+      }
+      .boxes {
+        margin: 0px auto;
+        width: 70%;
+        position: relative;
+      }
+      .large {
+        background-color: teal;
+        width: 96%;
+        height: 5em;
+        margin: 2%;
+        position: absolute;
+      }
+    }
+  </style>
+  <body>
+    <div class="github_head">
+      <a href="#" class="fa fa-github fa-4x"></a>
+      <div class="head-text">
+        <h1>GITHUB</h1>
+      </div>
+    </div>
+    <!-------------------------boxes-->
+    <div class="container">
+      <div class="side-bar"><h1>sidebar</h1></div>
+      <div class="boxes">
+        <div class="search"><p>search</p></div>
+        <div class="small-box">
+          <div class="small"><p>small div</p></div>
+          <div class="small"><p>small div</p></div>
+          <div class="small"><p>small div</p></div>
+        </div>
+        <div class="large"><p>large div</p></div>
+      </div>
+    </div>
+  </body>
+</html>
